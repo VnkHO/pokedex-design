@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 50%;
+	/** 8px **/
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/**********************************
+*
+*    MEDIA QUERIES
+*
+***********************************/
+
+
+/* Mobile - 375px to 424px */
+
+
+@media only screen and (min-width: 23.4375em) {
+
+}
+
+/* Large Mobile - 425px to 499px */
+
+@media only screen and (min-width: 26.5625em) {
+
+}
+
+/* Large Mobile - 550 to 1023px */
+
+@media only screen and (min-width: 34.375em) {
+
+}
+
+/* Tablet - 768px to 1023px */
+/** 1rem = 9px **/
+
+
+@media only screen and (min-width: 48em) {
+	html {
+		font-size: 56.25%;
+		/** 9px **/
+	}
+}
+
+/* Small Desktop - 1024px to 1199px */
+
+/** 1rem = 10px **/
+
+
+@media only screen and (min-width: 64em) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
+/* Desktop - 1200px to 1399px */
+
+@media only screen and (min-width: 75em) {
+
+}
+
+/* Big Desktop - 1399px to 1920px */
+
+@media only screen and (min-width: 160em) {
+	html {
+		font-size: 75%;
+	}
+}
+
+.header {
+
+  background-color: red;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  &__title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: calc(100vh - 5vh);
+  background-color: lightblue;
+}
+
+.pokedex {
+  width: 320px;
+  height: 568px;
+  border: 1px solid burlywood;
+}
